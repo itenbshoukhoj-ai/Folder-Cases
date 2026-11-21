@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>قضايا سرّية!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;800&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6efe0;--ink:#2b1a4a;--sub:#5b4a78;--bar:#f6efe0;--bd:#d9c9a3}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1c1530;--ink:#fff3d6;--sub:#c9bce6;--bar:#1c1530;--bd:#3b2f5e}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1c1530;--ink:#fff3d6;--sub:#c9bce6;--bar:#1c1530;--bd:#3b2f5e}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Rubik,Tahoma,sans-serif;min-height:100vh}
+.wrap{max-width:900px;margin:0 auto;padding:clamp(20px,5vw,48px) 16px 40px;text-align:center}
+h1{font-family:"Baloo Bhaijaan 2",Tahoma,sans-serif;font-weight:800;font-size:clamp(2.6rem,9vw,4.8rem);margin:0 0 6px;line-height:1.2}
+p.lead{font-family:"Baloo Bhaijaan 2",Tahoma,sans-serif;font-weight:600;color:var(--sub);font-size:clamp(1.1rem,3.6vw,1.6rem);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:clamp(12px,3vw,22px)}
+.tile{aspect-ratio:1;display:grid;place-items:center;background:var(--c);color:#fff;text-decoration:none;border-radius:26px;box-shadow:0 8px 0 rgba(0,0,0,.22);transition:transform .2s ease,box-shadow .2s ease}
+.tile span{font-family:"Baloo Bhaijaan 2",Tahoma,sans-serif;font-weight:800;font-size:clamp(4rem,14vw,6.5rem);line-height:1;text-shadow:0 3px 0 rgba(0,0,0,.2)}
+.tile:hover,.tile:focus-visible{transform:scale(1.08) rotate(-2deg);box-shadow:0 12px 0 rgba(0,0,0,.25)}
+.tile:active{transform:scale(.98)}
+a:focus-visible{outline:4px solid #f2a81d;outline-offset:3px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bar);padding:10px 12px;border-bottom:2px solid var(--bd);text-align:start}
+.home{display:inline-block;font-family:"Baloo Bhaijaan 2",Tahoma,sans-serif;font-weight:800;font-size:1.15rem;background:#8a4fc7;color:#fff;text-decoration:none;padding:6px 20px;border-radius:999px}
+.stage img{display:block;width:100%;max-width:900px;height:auto;margin:16px auto;padding:0 12px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bar);z-index:10}
+@media (prefers-reduced-motion:reduce){.tile{transition:none}}
+</style></head><body>
+<main id="home" class="wrap"><h1>قضايا سرّية!</h1><p class="lead">اختاري رقم المرحلة وابدئي بحل القضية🚀</p><div class="grid"><a class="tile" href="#s1" style="--c:#e8457c"><span>1</span></a><a class="tile" href="#s2" style="--c:#2f7fd8"><span>2</span></a><a class="tile" href="#s3" style="--c:#f2a81d"><span>3</span></a><a class="tile" href="#s4" style="--c:#2fa86a"><span>4</span></a><a class="tile" href="#s5" style="--c:#8a4fc7"><span>5</span></a><a class="tile" href="#s6" style="--c:#e8643a"><span>6</span></a><a class="tile" href="#s7" style="--c:#17a3b8"><span>7</span></a></div></main>
+<section class="stage" id="v1" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/1.png" width="1414" height="2000" alt="المرحلة 1"></section><section class="stage" id="v2" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/2.png" width="1414" height="2000" alt="المرحلة 2"></section><section class="stage" id="v3" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/3.png" width="1414" height="2000" alt="المرحلة 3"></section><section class="stage" id="v4" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/4.png" width="1414" height="2000" alt="المرحلة 4"></section><section class="stage" id="v5" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/5.png" width="1414" height="2000" alt="المرحلة 5"></section><section class="stage" id="v6" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/6.png" width="1587" height="2245" alt="المرحلة 6"></section><section class="stage" id="v7" hidden><div class="bar"><a class="home" href="#">🏠 الرئيسية</a></div><img src="images/7.png" width="1587" height="2245" alt="المرحلة 7"></section>
+<script>
+function route(){var m=/^#s([1-7])$/.exec(location.hash),n=m?m[1]:null;
+document.getElementById("home").hidden=!!n;
+for(var i=1;i<=7;i++)document.getElementById("v"+i).hidden=(String(i)!==n);
+window.scrollTo(0,0);}
+addEventListener("hashchange",route);route();
+</script></body></html>
